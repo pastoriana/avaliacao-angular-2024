@@ -30,8 +30,14 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "outputPath": "dist/demo",
-            "scripts": [],
-            "styles": ["src/global_styles.css"],
+            "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
             "tsConfig": "tsconfig.app.json"
           }
         },
@@ -54,6 +60,7 @@
       "schematics": {},
       "sourceRoot": "src"
     }
+
   },
   "version": 1
 }
